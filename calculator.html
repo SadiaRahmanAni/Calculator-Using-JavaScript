@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="output" class="output form-control" readonly>
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="clearOutput()">C</button>
+            <button class="btn btn-primary" onclick="appendToOutput('7')">7</button>
+            <button class="btn btn-primary" onclick="appendToOutput('8')">8</button>
+            <button class="btn btn-primary" onclick="appendToOutput('9')">9</button>
+            <button class="btn btn-primary" onclick="appendToOutput('/')">/</button>
+            <button class="btn btn-primary" onclick="appendToOutput('4')">4</button>
+            <button class="btn btn-primary" onclick="appendToOutput('5')">5</button>
+            <button class="btn btn-primary" onclick="appendToOutput('6')">6</button>
+            <button class="btn btn-primary" onclick="appendToOutput('*')">*</button>
+            <button class="btn btn-primary" onclick="appendToOutput('1')">1</button>
+            <button class="btn btn-primary" onclick="appendToOutput('2')">2</button>
+            <button class="btn btn-primary" onclick="appendToOutput('3')">3</button>
+            <button class="btn btn-primary" onclick="appendToOutput('-')">-</button>
+            <button class="btn btn-primary" onclick="appendToOutput('0')">0</button>
+            <button class="btn btn-primary" onclick="appendToOutput('.')">.</button>
+            <button class="btn btn-primary" onclick="calculateResult()">=</button>
+            <button class="btn btn-primary" onclick="appendToOutput('+')">+</button>
+            <button class="btn btn-primary" onclick="appendToOutput('(')">(</button>
+            <button class="btn btn-primary" onclick="appendToOutput(')')">)</button>
+            <button class="btn btn-primary" onclick="calculateSqrt()">√</button>
+            <button class="btn btn-primary" onclick="calculateSquare()">x²</button>
+            <button class="btn btn-primary" onclick="calculateInverse()">1/x</button>
+            <button class="btn btn-primary" onclick="calculateSin()">sin</button>
+            <button class="btn btn-primary" onclick="calculateCos()">cos</button>
+            <button class="btn btn-primary" onclick="calculateTan()">tan</button>
+            <button class="btn btn-primary" onclick="appendToOutput('%')">%</button>
+            <button class="btn btn-primary" onclick="appendToOutput('^')">^</button>
+            <button class="btn btn-primary" onclick="appendToOutput('ln(')">ln</button>
+            <button class="btn btn-primary" onclick="appendToOutput('log(')">log</button>
+            <button class="btn btn-primary" onclick="appendToOutput('!')">!</button>
+            <button class="btn btn-primary" onclick="appendToOutput('pi')">π</button>
+            <button class="btn btn-primary" onclick="appendToOutput('e')">e</button>
+            <button class="btn btn-primary" onclick="appendToOutput('abs(')">abs</button>
+            <button class="btn btn-primary" onclick="appendToOutput('x')">x</button>
+            <button class="btn btn-primary" onclick="appendToOutput('y')">y</button>
+            <button class="btn btn-primary" onclick="appendToOutput('sqrt(')">√</button>
+            <button class="btn btn-primary" onclick="clearLastCharacter()">Clear Last</button>
+            <button class="btn btn-primary" onclick="clearAll()">Clear All</button>
+            <button class="btn btn-new" onclick="appendToOutput('%')">%</button>
+            <button class="btn btn-new" onclick="appendToOutput('^')">^</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
